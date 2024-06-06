@@ -66,7 +66,8 @@ public class Main {
                      .result(registry.scrape());
                } else {
                  // si el token no es el apropiado, devolver error,
-                 // desautorizado este paso es necesario para que Grafana online
+                 // desautorizado
+                 // este paso es necesario para que Grafana online
                  // permita el acceso
                  ctx.status(401).json("unauthorized access");
                }
