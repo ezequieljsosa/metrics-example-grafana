@@ -28,13 +28,21 @@ Esta sección es un resumen de la configuración [que pueden encontrar aquí, ve
 
 1) Entrar a Grafana Cloud, crear un usuario y una cloud propia
 2) Ir a _Connections_ en la barra izquierda y buscar _Metrics Endpoint_ en la barra de búsqueda para agregar nuevas conexiones
+
+![Crear nuevo scrape job](docs/1.png)
+
 3) Click en _Add new scrape job_ e ir a la configuración del trabajo
 4) Configurar el trabajoo de scraping:
     - Nombre del trabajo con el valor que quieran
     - _Scrape job URL_ que debe apuntar al endpoint de métricas de su servicio (ej: https://miservicio.com/metrics)
     - _Type of Authentication Credentials_ en _Bearer_
     - _Bearer Token_ con el valor configurado del token en su app (en este ejemplo por defecto está en `token`)
+
+![Configuración del scraping job](docs/2.png)
+
 5) Click en _Test Connection_, _Save Scrape Job_ e _Install_
 6) Crear el dashboard
 
 Listo, en el nuevo dashboard creado deberían ver las métricas reportadas por el job de scraping. Pueden configurar este dashboard y customizarlo como prefieran.
+
+![Dashboard con métricas](docs/3.png)
