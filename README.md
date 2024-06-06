@@ -22,7 +22,7 @@ Para llamar al servicio con la ruta de métricas:
 curl localhost:7070/metrics -H "Authorization: Bearer token" # cambiar el token por el valor configurado
 ```
 
-## Integración conn Grafana Cloud
+## Integración con Grafana Cloud
 
 Esta sección es un resumen de la configuración [que pueden encontrar aquí, ver para más detalle](https://grafana.com/docs/grafana-cloud/monitor-infrastructure/integrations/integration-reference/integration-metrics-endpoint/).
 
