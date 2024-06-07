@@ -13,4 +13,4 @@ FROM openjdk:17-jdk-slim
 COPY --from=build /target/metrics-example-1.0-SNAPSHOT-jar-with-dependencies.jar app.jar
 # ENV PORT=8080
 EXPOSE 8080
-CMD ["java","-classpath","app.jar","ar.edu.dds.k3003.Main"]
+CMD ["java","-classpath","app.jar","ar.edu.utn.dds.k3003.Main"]
