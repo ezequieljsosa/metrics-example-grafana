@@ -61,7 +61,7 @@ public class Main {
                // configurado
                var auth = ctx.header("Authorization");
 
-               if (auth.intern() == "Bearer " + TOKEN) {
+               if (auth != null && auth.intern() == "Bearer " + TOKEN) {
                  ctx.contentType("text/plain; version=0.0.4")
                      .result(registry.scrape());
                } else {
